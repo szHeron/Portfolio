@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
-import notebookImg from '../../public/notebook.png';
+import notebookImg from '../public/notebook.png';
 import Copy from '../components/copy';
 import ButtonCV from '../components/buttonCV';
 

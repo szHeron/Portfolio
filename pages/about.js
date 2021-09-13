@@ -7,11 +7,10 @@ const Content = styled.div`
     p{
         text-align: start;
         margin: 20px;
-        margin-bottom: 40px;
     }
 
     @media (min-width: 768px){
-        margin-bottom: 155px;
+        margin-bottom: 150px;
     }
 `
 

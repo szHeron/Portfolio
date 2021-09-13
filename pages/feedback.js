@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import Image from 'next/image'
 import styled from 'styled-components';
-import chatImg from '../../public/chat.png';
 import Copy from '../components/copy';
 
 const Content = styled.div`
@@ -10,15 +8,6 @@ const Content = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    aside{
-        z-index: 2;
-    }
-
-    @media (max-width: 768px){
-        aside{
-            display: none;
-        }
-    }
 `
 
 const Form = styled.form`
@@ -168,9 +157,6 @@ export default function Feedback(){
                 </Button>
                 <span style={{color: '#00a000'}} id="response"/>
             </Form>
-            <aside style={{position: 'absolute', right:20, bottom: 40}}>
-                <Image src={chatImg} alt="Ilustração chat" width={411} height={500}></Image>
-            </aside>
             <Copy/>
         </Content>
     );

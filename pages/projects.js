@@ -16,18 +16,13 @@ const Content = styled.div`
 
 export async function getStaticProps() {
     let repositories = null;
-
-    try{
-        const res = await fetch('http://localhost:3000/api/repos', {method: 'GET'});
-        repositories = await res.json();
-    }catch(err){
-        console.log(err.error);
-    }
-
+    const res = await fetch('http://localhost:3000/api/repos', {method: 'GET'});
+    repositories = await res.json();
+    
     return {
-      props: {
-        repositories,
-      },
+        props: {
+            repositories,
+        },
     }
   }
 
