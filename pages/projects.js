@@ -15,16 +15,20 @@ const Content = styled.div`
 `;
 
 export async function getStaticProps() {
-    let repositories = null;
+    let data = null;
     const res = await fetch('http://localhost:3000/api/repos', {method: 'GET'});
-    repositories = await res.json();
+    data = await res.json();
     
-    return {
-        props: {
-            repositories,
-        },
+    if(!data) {
+        return {
+            notFound: true,
+        }
     }
-  }
+
+    return {
+        props: { data },
+    }
+}
 
 export default function Projects({repositories}){
     const [repos,setRepos] = useState({...repositories, topics:
