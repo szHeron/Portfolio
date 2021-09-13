@@ -12,6 +12,10 @@ const Content = styled.div`
     @media (min-width: 768px){
         margin-bottom: 150px;
     }
+
+    @media (min-width: 1280px){
+        margin-bottom: 385px;
+    }
 `
 
 export default function About(){

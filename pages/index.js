@@ -21,6 +21,7 @@ const Content = styled.div`
   justify-content: space-around;
   align-items: center;
   padding-top: 40px;
+  
   @media (max-width: 768px){
     aside{
       display: none;

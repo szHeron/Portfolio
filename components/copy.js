@@ -9,7 +9,7 @@ const Footer = styled.footer`
     justify-content: center;
     height: 50px;
     position: absolute;
-    bottom: 3px;
+    bottom: 5px;
     z-index: 1;
 
     p{
