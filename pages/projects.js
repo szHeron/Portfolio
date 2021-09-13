@@ -16,7 +16,7 @@ const Content = styled.div`
 `;
 
 export async function getStaticProps() {
-    const data = GetRepos();
+    const data = await GetRepos();
     
     if(!data) {
         return {
