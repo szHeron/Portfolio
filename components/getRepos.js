@@ -1,9 +1,10 @@
 const { Octokit } = require("@octokit/rest");
 
-export default async function repos(req,res){
+export default async function GetRepos(){
     const octokit = new Octokit({
         auth: process.env.GITHUB_AUTH_TOKEN,
     });
+
     try{
         const notes = await octokit.request('GET /repos/{owner}/{repo}', {
             owner: 'szHeron',
@@ -23,10 +24,10 @@ export default async function repos(req,res){
             links: [notes.data.html_url, coin.data.html_url, nlw.data.html_url],
         }
 
-        res.status(200).json(repos);
+        return repos;
 
     }catch(err){
         console.log(err);
-        res.status(500).end();
+        return 0;
     }
 }

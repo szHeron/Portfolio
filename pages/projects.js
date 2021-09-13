@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import GetRepos from '../components/getRepos';
 import Copy from '../components/copy';
 import Project from '../components/project';
 
@@ -15,9 +16,7 @@ const Content = styled.div`
 `;
 
 export async function getStaticProps() {
-    let data = null;
-    const res = await fetch('http://localhost:3000/api/repos', {method: 'GET'});
-    data = await res.json();
+    const data = GetRepos();
     
     if(!data) {
         return {
