@@ -8,14 +8,6 @@ const Content = styled.div`
         text-align: start;
         margin: 20px;
     }
-
-    @media (min-width: 768px){
-        margin-bottom: 150px;
-    }
-
-    @media (min-width: 1280px){
-        margin-bottom: 385px;
-    }
 `
 
 export default function About(){
@@ -31,8 +23,8 @@ export default function About(){
                 </p>
                 <h2>Habilidades</h2>
                 <Carousel/>
+                <Copy style={{left: '25%', right: '75%'}}/>
             </Content>
-            <Copy style={{position: 'relative', marginTop: 50}}/>
         </>
     );
 };

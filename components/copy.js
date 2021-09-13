@@ -9,12 +9,9 @@ const Footer = styled.footer`
     justify-content: center;
     height: 50px;
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
+    width: 50%;
     z-index: 1;
-
-    p{
-        margin-bottom: 2px;
-    }
 `
 
 export default function Copy(props){
