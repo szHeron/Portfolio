@@ -16,16 +16,9 @@ const Content = styled.div`
 `;
 
 export async function getStaticProps() {
-    const data = await GetRepos();
-    
-    if(!data) {
-        return {
-            notFound: true,
-        }
-    }
-
+    const repositories = await GetRepos();
     return {
-        props: { data },
+        props: {repositories},
     }
 }
 
