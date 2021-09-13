@@ -1,34 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <h1> 📜 Portfólio </h1>
+  <img height=150 width=250 src="./public/logo.png"/>
+</div>
+<br/>
+<p align="center">
+  <img src="https://i.ibb.co/LScbTMp/Captura-da-Web-12-9-2021-1540-localhost.jpg" alt="Home do site" border="0"/>
+</p>
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript"/>
 
-First, run the development server:
+  <img src="https://img.shields.io/badge/nestjs-%23323330.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="NextJs"/>
+
+  <img src="https://img.shields.io/badge/figma-%23323330.svg?style=for-the-badge&logo=figma&logoColor=orange" alt="Figma"/>
+
+   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-%23323330.svg?style=for-the-badge&logo=visual-studio-code&logoColor=blue" alt="VScode"/>
+
+   <img height=28 src="https://img.shields.io/badge/license-MIT-blue" alt="License">  
+
+</p>
+
+<br>
+
+## 🧪 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [NextJs](https://nextjs.org/)
+- [Styled-Components](https://styled-components.com/)
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Figma](http://figma.com/)
+
+## 🚀 Como executar
+
+Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone https://github.com/szHeron/NLW6-Letmeask
+$ cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para iniciá-lo, siga os passos abaixo:
+```bash
+# Instalar as dependências
+$ yarn ou npm install
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Iniciar o projeto
+$ yarn dev ou npm run dev
+```
+O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 💻 Projeto
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Esse projeto foi construido com o proposito de servir como o meu portfólio pessoal, produzido inteiramente com o meu conhecimento nas tecnologias utilizadas.
 
-## Learn More
+## 🌟 Features
 
-To learn more about Next.js, take a look at the following resources:
+- [x] Consumo e criação de API Rest.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [x] Tema escuro e claro.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [x] Responsividade.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔖 Layout
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Você pode visualizar o layout do projeto através do link abaixo:
+
+- [Layout Web](https://www.figma.com/file/883MwaS6WRiNZrweMr0saa/Personal-site?node-id=0%3A1) 
+
+Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
+
+## 📝 License
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
