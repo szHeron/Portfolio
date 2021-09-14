@@ -15,7 +15,7 @@ export default function About(){
         <>
             <Content>
                 <h1>Sobre mim</h1>
-                <p> &nbsp;Comecei a minha jornada em 2016 - 2017, desenvolvendo em equipe um servidor para o jogo Minecraft, 
+                <p> &nbsp;Olá meu nome é Heron e tenho 19 anos, comecei a minha jornada em 2016 - 2017, desenvolvendo em equipe um servidor para o jogo Minecraft, 
                     com isso ganhei interesse na área de desenvolvimento e em 2020 ingressei no curso de Engenharia de Software na 
                     Universidade Federal do Ceará, e acabei me interessando mais ainda nessa área, atualmente estou na metade do curso e aprendendo 
                     React Native, ReactJs(NextJS) e NodeJs(Express e MongoDB), como conteúdo externo ao curso, mas além disso, procuro me desenvolver como profissional, 

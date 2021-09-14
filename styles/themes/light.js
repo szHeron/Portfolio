@@ -1,5 +1,5 @@
 const light = {
-    title: "Light",
+    title: "light",
     colors: {
         primary: '#4A70F8',
         secundary: '#4A70F880',

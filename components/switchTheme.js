@@ -14,8 +14,8 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `
 
 export default function SwitchTheme({theme, setTheme}){
-    const toggleTheme = () => {theme.title === 'Light'?setTheme(dark):setTheme(light)};
-    const icon = theme.title === 'Light'?"moon":"sun"
+    const toggleTheme = () => {theme.title === 'light'?setTheme(dark):setTheme(light)};
+    const icon = theme.title === 'light'?"moon":"sun"
     
     library.add(fas);
 

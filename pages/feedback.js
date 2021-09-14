@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import ReCAPTCHA from 'react-google-recaptcha';
 import Copy from '../components/copy';
 
 const Content = styled.div`
@@ -41,6 +42,7 @@ const Form = styled.form`
         border-radius: 7px;
         border: none;
         margin: 10px;
+        margin-bottom: 15px;
         color: #fff;
         background-color: ${props=>props.theme.colors.primary};
     }
@@ -65,19 +67,23 @@ const Form = styled.form`
 const Button = styled.button`
     height: 7vh;
     width: 10vw;
-    margin: 20px;
+    margin: 10px;
     border-radius: 7px;
     color: #fff;
     border: none; 
     background-color: ${props=>props.theme.colors.primary};
     cursor: pointer;
+
+    :disabled{
+        background-color: ${props=>props.theme.colors.secundary};
+        cursor: default;
+    }
 `
 
 const Error = styled.span`
     font-size: 12px;
     color: red;
 `
-
 
 export default function Feedback(){
     const [name, setName] = useState('');
@@ -94,7 +100,6 @@ export default function Feedback(){
         inputName.style.border = "none";
         inputEmail.style.border = "none";
         inputMessage.style.border = "none";
-        
         setErros({});
 
         if(!email.trim()){
@@ -142,6 +147,13 @@ export default function Feedback(){
         }
     }
 
+    const onReCAPTCHAChange = (captchaCode) => {
+        if(!captchaCode) {
+            return;
+        }
+        document.getElementById('send').removeAttribute("disabled");
+    }
+
     return(
         <Content>
             <h1>Feedback</h1>
@@ -152,12 +164,16 @@ export default function Feedback(){
                 {erros.email && <Error>{erros.email}</Error>}
                 <textarea name="input" id="input-message" placeholder="Mensagem" maxLength="512" onChange={(e)=>{setMessage(e.target.value)}}></textarea>
                 {erros.message && <Error>{erros.message}</Error>}
-                <Button type="submit">
+                <ReCAPTCHA
+                    sitekey="6LdAr2UcAAAAAJ2aDnR3wGVtDs0hLiM2Kq-WuyTX"
+                    onChange={onReCAPTCHAChange}
+                />
+                <Button id="send" disabled type="submit">
                     ENVIAR
                 </Button>
                 <span style={{color: '#00a000'}} id="response"/>
             </Form>
-            <Copy/>
+            <Copy style={{marginTop: '25px',position: 'relative'}}/>
         </Content>
     );
 };

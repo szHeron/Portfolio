@@ -1,8 +1,8 @@
 const dark = {
-    title: "Dark",
+    title: "dark",
     colors: {
         primary: '#774AD9',
-        secundary: '#242424',
+        secundary: '#774AD980',
         tertiary: '#242424',
 
         background: '#000',
