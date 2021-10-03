@@ -7,7 +7,7 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 `
 
@@ -173,7 +173,7 @@ export default function Feedback(){
                 </Button>
                 <span style={{color: '#00a000'}} id="response"/>
             </Form>
-            <Copy style={{marginTop: '25px',position: 'relative'}}/>
+            <Copy/>
         </Content>
     );
 };

@@ -33,9 +33,7 @@ const Main = styled.main`
   margin: 5px;
   z-index: 1;
   h1{
-    @media (max-width: 768px){
-      font-size: 10vw;
-    }
+    font-size: 3em;
     span{
       color: ${props=>props.theme.colors.primary};
     }
@@ -53,7 +51,7 @@ export default function Home() {
               "Entusiasta da programação ;)", "Fã de videogames 🎮."],
               autoStart: true,
               delay: 45,
-              loop: true,
+              loop: true
             }}/>
             <ButtonCV/>
         </Main>
