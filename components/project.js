@@ -7,15 +7,15 @@ const Content = styled.div`
     align-items: flex-start;
     width: 80vw;
     height: 20vh;
-    padding: 15px;
+    padding: 10px;
     padding-left: 35px;
     padding-right: 35px;
+    padding-bottom: 170px;
     border-radius: 20px;
     background-color: ${props=>props.theme.colors.tertiary};
     color: #fff;
     z-index: 1;
     margin-bottom: 25px;
-    padding-bottom: 160px;
 
     div{
         display: flex;
@@ -70,10 +70,12 @@ const Content = styled.div`
 
         section{
             flex-wrap: wrap;
+            overflow: hidden;
         }
     }
 
     @media (max-width: 392px){
+        padding-bottom: 6px;
         height: 50vh;
     }
 `

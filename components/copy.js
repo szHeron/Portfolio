@@ -3,15 +3,19 @@ import styled from "styled-components";
 import Contatos from './contacts';
 
 const Footer = styled.footer`
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 50px;
-    position: absolute;
     bottom: 10px;
     width: 50%;
     z-index: 1;
+
+    @media (max-width: 360px){
+        position: relative;
+    }
 `
 
 export default function Copy(props){
