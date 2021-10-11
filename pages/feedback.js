@@ -22,7 +22,7 @@ const Form = styled.form`
 
     input{
         width: 30vw;
-        margin: 10px;
+        margin: 5px;
         padding: 10px;
         border-radius: 7px;
         border: none;
@@ -173,7 +173,7 @@ export default function Feedback(){
                 </Button>
                 <span style={{color: '#00a000'}} id="response"/>
             </Form>
-            <Copy/>
+            <Copy style={{position:'relative'}}/>
         </Content>
     );
 };
