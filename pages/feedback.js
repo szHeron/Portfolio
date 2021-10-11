@@ -173,7 +173,7 @@ export default function Feedback(){
                 </Button>
                 <span style={{color: '#00a000'}} id="response"/>
             </Form>
-            <Copy style={{position:'relative'}}/>
+            <Copy style={window.screen.width > 768&&{position:'relative'}}/>
         </Content>
     );
 };
