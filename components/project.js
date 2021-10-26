@@ -71,7 +71,6 @@ const Content = styled.div`
 
         section{
             flex-wrap: wrap;
-            overflow: hidden;
 
             :-webkit-scrollbar {
                 width: 5px;
