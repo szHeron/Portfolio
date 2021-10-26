@@ -4,13 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Content = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
     width: 80vw;
-    height: 22vh;
-    padding: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 175px;
+    height: 27vh;
+    padding: 20px;
     border-radius: 20px;
     background-color: ${props=>props.theme.colors.tertiary};
     color: #fff;
@@ -27,13 +25,11 @@ const Content = styled.div`
     section{
         display: flex;
         flex-direction: row;
-        align-self: flex-end;
         justify-content: flex-start;
-        width: 100%;
     }
 
     h2{
-        margin-bottom: 0px;
+        margin: 0px;
     }
 
     a {
@@ -71,13 +67,9 @@ const Content = styled.div`
 
         section{
             flex-wrap: wrap;
-
+            overflow-y: scroll;
             :-webkit-scrollbar {
                 width: 5px;
-            }
-
-            :-webkit-scrollbar-track {
-                background: transparent;
             }
 
             :-webkit-scrollbar-thumb {
@@ -101,11 +93,7 @@ const Topic = styled.p`
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
-    margin-right: 20px;
-
-    @media (max-width: 768px){
-        margin-bottom: 0px;
-    }
+    margin: 5px 15px 0 0;
 `
 
 export default function Project(props){
@@ -116,7 +104,7 @@ export default function Project(props){
                 <p>{props.desc}</p>
                 <a href={props.link} target="_blank" rel="noreferrer">GITHUB<FontAwesomeIcon icon={["fas", "external-link-alt"]} size={'1x'}/></a>
             </div>
-            <section style={{justifyContent: 'flex-start'}}>
+            <section>
                 {props.topics.map((elemento, key)=>{
                     return <Topic key={key}>{elemento}</Topic>
                 })}
