@@ -27,7 +27,9 @@ export default function Projects({repositories}){
         [['ReactNative', 'Expo', 'Async-storage','Navigation'],
         ['ReactNative', 'Expo', 'Axios'],
         ['ReactJs', 'TypeScript', 'SCSS', 'Firebase'],
-        ['NextJs','Styled-components','Production - Vercel']]
+        ['NextJs','Styled-components','Production - Vercel'],
+        ['ReactJs', 'TypeScript','Styled-components','Production - Vercel'],
+        ['ReactJs', 'MongoDB', 'NodeJs', 'ExpressJs']]
     });
     return(
         <Content>
