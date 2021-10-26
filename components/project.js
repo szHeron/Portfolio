@@ -6,7 +6,7 @@ const Content = styled.div`
     flex-direction: column;
     align-items: flex-start;
     width: 80vw;
-    height: 20vh;
+    height: 21vh;
     padding: 10px;
     padding-left: 35px;
     padding-right: 35px;
@@ -71,6 +71,19 @@ const Content = styled.div`
         section{
             flex-wrap: wrap;
             overflow: hidden;
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #363636;
+                border-radius: 20px;
+                border: 0;
+            }
         }
     }
 
