@@ -10,7 +10,7 @@ const Content = styled.div`
     padding: 10px;
     padding-left: 35px;
     padding-right: 35px;
-    padding-bottom: 170px;
+    padding-bottom: 175px;
     border-radius: 20px;
     background-color: ${props=>props.theme.colors.tertiary};
     color: #fff;
