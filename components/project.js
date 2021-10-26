@@ -27,6 +27,7 @@ const Content = styled.div`
     section{
         display: flex;
         flex-direction: row;
+        align-self: flex-end;
         justify-content: flex-start;
         width: 100%;
     }
@@ -71,15 +72,16 @@ const Content = styled.div`
         section{
             flex-wrap: wrap;
             overflow: hidden;
-            &::-webkit-scrollbar {
+
+            :-webkit-scrollbar {
                 width: 5px;
             }
 
-            &::-webkit-scrollbar-track {
+            :-webkit-scrollbar-track {
                 background: transparent;
             }
 
-            &::-webkit-scrollbar-thumb {
+            :-webkit-scrollbar-thumb {
                 background-color: #363636;
                 border-radius: 20px;
                 border: 0;
