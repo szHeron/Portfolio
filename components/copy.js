@@ -23,7 +23,7 @@ export default function Copy(props){
     return(
         <Footer style={style}>
             <Contatos/>
-            <p>&copy;2021 Heron</p>
+            <p>&copy;2022 Heron</p>
         </Footer>
     )
 }
