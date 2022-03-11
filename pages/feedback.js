@@ -173,7 +173,6 @@ export default function Feedback(){
                 </Button>
                 <span style={{color: '#00a000'}} id="response"/>
             </Form>
-            <Copy/>
         </Content>
     );
 };

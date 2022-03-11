@@ -12,8 +12,8 @@ export default function sendMail(req,res){
 
     try{
         transporter.sendMail({
-            from: `<contatoheron.dev@gmail.com>`,
-            to: "contatoheron.dev@gmail.com, Mailer <contatoheron.dev@gmail.com>",
+            from: `<contatoheron.dev@outlook.com>`,
+            to: "contatoheron.dev@outlook.com, Mailer <contatoheron.dev@outlook.com>",
             subject: `${req.body.email} mandou um feedback pelo site portfolio`,
             text: `${req.body.message}`
         })
