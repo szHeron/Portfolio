@@ -4,13 +4,9 @@ export default function sendMail(req,res){
     const transporter = nodemailer.createTransport({
         host: "in-v3.mailjet.com",
         port: 587,
-        secure : false,
         auth: {
             user: process.env.USERMAIL,
             pass: process.env.PASSMAIL
-        },
-        tls: {
-            rejectUnauthorized: false
         }
     });
 
