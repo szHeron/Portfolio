@@ -20,10 +20,11 @@ const Footer = styled.footer`
 
 export default function Copy(props){
     const [style, setStyle] = useState(() => {return props.style?props.style:{}});
+    const year = new Date().getFullYear();
     return(
         <Footer style={style}>
             <Contatos/>
-            <p>&copy;2022 Heron</p>
+            <p>&copy;{year} Heron</p>
         </Footer>
     )
 }

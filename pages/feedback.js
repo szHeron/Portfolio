@@ -129,13 +129,15 @@ export default function Feedback(){
 
         return false;
     }
-
     function handleSubmit(){
         if(validate()){
-            fetch('https://portfolio-szheron.vercel.app/api/sendMail',{
+            //"https://portfolio-szheron.vercel.app/api/sendMail"
+            fetch("http://192.168.100.34:3000/api/sendMail",{
                 method:'POST',
                 headers:{
-                    'Content-type': 'application/json'
+                    'Content-type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Methods': 'POST'
                 },
                 body: JSON.stringify({
                     name,
