@@ -131,8 +131,7 @@ export default function Feedback(){
     }
     function handleSubmit(){
         if(validate()){
-            //"https://portfolio-szheron.vercel.app/api/sendMail"
-            fetch("http://192.168.100.34:3000/api/sendMail",{
+            fetch("https://portfolio-szheron.vercel.app/api/sendMail",{
                 method:'POST',
                 headers:{
                     'Content-type': 'application/json',
