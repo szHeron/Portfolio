@@ -133,11 +133,6 @@ export default function Feedback(){
         if(validate()){
             fetch("https://portfolio-szheron.vercel.app/api/sendMail",{
                 method:'POST',
-                headers:{
-                    'Content-type': 'application/json',
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods': 'POST'
-                },
                 body: JSON.stringify({
                     name,
                     email,

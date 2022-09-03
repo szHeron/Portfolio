@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 export default function sendMail(req,res){
     const transporter = nodemailer.createTransport({
         host: "in-v3.mailjet.com",
-        port: 587,
+        port: 25,
         secure : false,
         auth: {
             user: process.env.USERMAIL,
