@@ -131,7 +131,7 @@ export default function Feedback(){
     }
     function handleSubmit(){
         if(validate()){
-            fetch("http://localhost:3000/api/sendMail",{
+            fetch("https://portfolio-szheron.vercel.app/api/sendMail",{
                 method:'POST',
                 body: JSON.stringify({
                     name,
