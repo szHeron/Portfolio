@@ -9,9 +9,15 @@ export default function sendMail(req,res){
             pass: process.env.PASSMAIL
         }
     });
-    const data = JSON.parse(req.body);
+
+    function isJson() {
+        if(!req.body.email)
+            return false;
+        return true;
+    }
 
     try{
+        const data = isJson()?req.body.email:JSON.parse(req.body);
         const email = data.email;
         const message = data.message;
 
