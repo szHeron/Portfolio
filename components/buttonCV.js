@@ -25,9 +25,11 @@ const Button = styled.button`
 
 export default function ButtonCV(){
     return(
-        <Button>
-            <a alt="Curriculo" href='https://docs.google.com/uc?export=download&id=1RbrloB2qXR8ejpZUb9wxNAlax7VkNiJE'>DOWNLOAD CV</a>
-        </Button>
+        <a alt="Curriculo" download href='https://docs.google.com/uc?export=download&id=1t8wftOtudCEPdd6MNBhs1f3QU4tzvbTc'>
+            <Button>
+                DOWNLOAD CV
+            </Button>
+        </a>
     )
 }
 
